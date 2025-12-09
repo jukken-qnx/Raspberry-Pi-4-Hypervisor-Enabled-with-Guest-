@@ -1,0 +1,6 @@
+externs.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devc/serpl011/externs.c \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devc/serpl011/externs.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devc/serpl011/variant.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\hw\dma.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devc/serpl011/proto.h

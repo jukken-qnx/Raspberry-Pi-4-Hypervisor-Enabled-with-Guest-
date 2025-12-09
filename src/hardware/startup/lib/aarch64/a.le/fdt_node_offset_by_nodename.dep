@@ -1,0 +1,3 @@
+fdt_node_offset_by_nodename.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/fdt_node_offset_by_nodename.c \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/sys/libfdt_private.h

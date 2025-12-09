@@ -1,0 +1,7 @@
+card.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sdiodi/card.c \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sdiodi/internal.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sdiodi/include/sdiodi.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sdiodi/include/mmc.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sdiodi/include/sd.h \
+ bs.h

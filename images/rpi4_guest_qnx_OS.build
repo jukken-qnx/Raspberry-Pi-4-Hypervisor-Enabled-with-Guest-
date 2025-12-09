@@ -1,0 +1,90 @@
+################################################################################################
+##
+## QNX Guest Build File for RPi under Hypervisor
+##
+################################################################################################
+
+[-optional]
+[+keeplinked]
+[image=0x80000]
+[virtual=aarch64le,raw -compress] boot = {
+    ## Standard guest startup; no -Q flag (host enables hypervisor)
+    startup-bcm2711-rpi4 -v -D miniuart -u reg
+    PATH=/proc/boot:/sbin:/bin:/usr/bin:/usr/sbin:/usr/libexec
+    LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll:/lib/dll/pci
+    procnto-smp-instr -v
+}
+
+[+script] startup-script = {
+    SYSNAME=guest1
+    TERM=qansi
+    ENV=/etc/profile
+
+    ## Minimal guest drivers: console, RAM disks for virtio-blk
+    display_msg "Starting devc-pty manager ..."
+    devc-pty
+
+    display_msg "Starting console on virtual serial ..."
+    devc-serminiuart -b115200 -F -u1 0xfe215000,125
+
+    ####################################################################################
+    ## Hypervisor virtual devices (defined in host)
+    ####################################################################################
+    display_msg "Setting up virtio-blk disks ..."
+    devb-ram ram capacity=262144 disk name=qvmdisk0
+    devb-ram ram capacity=262144 disk name=qvmdisk1
+
+    display_msg "Configuring virtual network ..."
+    waitfor /dev/io-sock/mods-vdevpeer-net.so
+    ifconfig vp0 create up
+    vpctl vp0 peer=/dev/qvm/qnx-host/host_to_guest bind=/dev/vdevpeers/vp0
+    ifconfig vp0 -txcsum -txcsum6 -tso6 -tso4
+
+    ## Start shell
+    display_msg "Starting shell ..."
+    [+session] ksh &
+}
+
+[uid=0 gid=0]
+
+[type=link] /bin/sh=/bin/ksh
+[type=link] /tmp=/dev/shmem
+[type=link] /dev/console=/dev/ser1
+[type=link] /var/log=/tmp
+[type=link] /usr/tmp=/tmp
+
+################################################################################################
+## Minimal guest drivers and libraries
+################################################################################################
+/sbin/devc-pty=devc-pty
+/sbin/devc-serminiuart=devc-serminiuart
+/sbin/devb-ram=devb-ram
+
+/lib/libc.so=libc.so
+/lib/ldqnx-64.so.2=ldqnx-64.so.2
+/lib/libgcc_s.so=libgcc_s.so
+/lib/libm.so=libm.so
+
+################################################################################################
+## Networking
+################################################################################################
+/sbin/io-sock=io-sock
+/sbin/ifconfig=ifconfig
+/sbin/vpctl=vpctl
+
+################################################################################################
+## Shell
+################################################################################################
+/bin/ksh=ksh
+
+################################################################################################
+## ENV profile
+################################################################################################
+/etc/profile = {
+export HOME=/
+export SYSNAME=guest1
+export TERM=qansi
+export PATH=/proc/boot:/sbin:/bin:/usr/bin:/usr/sbin:/usr/libexec
+export LD_LIBRARY_PATH=/proc/boot:/lib:/usr/lib:/lib/dll:/lib/dll/pci
+}
+

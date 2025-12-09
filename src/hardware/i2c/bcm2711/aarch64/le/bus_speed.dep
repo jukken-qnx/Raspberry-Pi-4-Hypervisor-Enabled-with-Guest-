@@ -1,0 +1,4 @@
+bus_speed.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/i2c/bcm2711/bus_speed.c \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/i2c/bcm2711/proto.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\aarch64\bcm2711.h

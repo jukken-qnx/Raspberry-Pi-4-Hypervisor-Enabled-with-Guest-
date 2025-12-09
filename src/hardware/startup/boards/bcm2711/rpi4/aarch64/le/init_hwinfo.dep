@@ -1,0 +1,12 @@
+init_hwinfo.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/boards/bcm2711/rpi4/init_hwinfo.c \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\startup.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\sys\startup.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\aarch64\cpu_startup.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\arm\armboth_startup.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\sys\restore_ifs.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\hw\hwinfo_private.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\sys\hwinfo.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/boards/public/hw/hwinfo_bcm2711.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/boards/public/aarch64/bcm2711.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/boards/bcm2711/mbox.h

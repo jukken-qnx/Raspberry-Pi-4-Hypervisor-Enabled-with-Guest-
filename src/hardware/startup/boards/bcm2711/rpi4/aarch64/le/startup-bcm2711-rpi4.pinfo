@@ -1,0 +1,8 @@
+STATE=Desktop
+INSTALLDIR=aarch64le/boot/sys/
+INSTALLNAME=startup-bcm2711-rpi4
+NAME=startup-bcm2711-rpi4
+USER=jukken
+HOST=CI0600000002228
+DATE=2025/12/08-15:57:37-WEST
+DESCRIPTION=RaspberryPi 4

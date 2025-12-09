@@ -1,0 +1,14 @@
+sim_sdmmc.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sim_sdmmc.c \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sim_sdmmc.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/include/module.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/include/ntocam.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/include/cam.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/include/xpt.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/include/ntoscsi.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/include/sim.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/public/hw/dcmd_sim_sdmmc.h \
+ sim_bs.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sdiodi/include/sdiodi.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sdiodi/include/sd.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/devb/sdmmc/sdiodi/include/mmc.h

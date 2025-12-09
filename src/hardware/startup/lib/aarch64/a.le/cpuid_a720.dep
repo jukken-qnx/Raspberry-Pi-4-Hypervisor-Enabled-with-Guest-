@@ -1,0 +1,7 @@
+cpuid_a720.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/aarch64/cpuid_a720.c \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/startup.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/sys/startup.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/aarch64/cpu_startup.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/arm/armboth_startup.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/sys/restore_ifs.h

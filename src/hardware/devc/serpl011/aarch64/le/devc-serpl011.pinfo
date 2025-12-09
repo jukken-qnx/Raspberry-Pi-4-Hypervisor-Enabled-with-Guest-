@@ -1,0 +1,8 @@
+STATE=Desktop
+INSTALLDIR=aarch64le/sbin/
+INSTALLNAME=devc-serpl011
+NAME=devc-serpl011
+USER=jukken
+HOST=CI0600000002228
+DATE=2025/12/08-15:57:32-WEST
+DESCRIPTION=Character device driver for PL011 UART

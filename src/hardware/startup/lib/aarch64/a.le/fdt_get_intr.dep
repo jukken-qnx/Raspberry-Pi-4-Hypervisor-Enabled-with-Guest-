@@ -1,0 +1,3 @@
+fdt_get_intr.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/fdt_get_intr.c \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/sys/libfdt_private.h

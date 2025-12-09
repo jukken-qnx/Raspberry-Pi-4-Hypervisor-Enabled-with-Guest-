@@ -1,0 +1,8 @@
+hw_rtc_mc146818.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/hw_rtc_mc146818.c \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/startup.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/sys/startup.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/aarch64/cpu_startup.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/arm/armboth_startup.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/sys/restore_ifs.h \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/lib/public/hw/mc146818.h

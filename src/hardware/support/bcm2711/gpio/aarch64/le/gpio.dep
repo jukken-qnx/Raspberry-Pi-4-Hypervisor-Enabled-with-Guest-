@@ -1,0 +1,3 @@
+gpio.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/support/bcm2711/gpio/gpio.c \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\aarch64\bcm2711.h

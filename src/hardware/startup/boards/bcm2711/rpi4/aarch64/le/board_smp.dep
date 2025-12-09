@@ -1,0 +1,7 @@
+board_smp.o: \
+ C:/Users/jukken/rpi4_hyp_803/src/hardware/startup/boards/bcm2711/board_smp.c \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\startup.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\sys\startup.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\aarch64\cpu_startup.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\arm\armboth_startup.h \
+ c:\users\jukken\rpi4_hyp_803\install\usr\include\sys\restore_ifs.h

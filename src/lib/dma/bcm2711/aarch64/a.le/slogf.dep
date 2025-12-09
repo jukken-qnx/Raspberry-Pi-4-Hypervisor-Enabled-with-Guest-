@@ -1,0 +1,3 @@
+slogf.o: C:/Users/jukken/rpi4_hyp_803/src/lib/dma/bcm2711/slogf.c \
+ C:/Users/jukken/rpi4_hyp_803/src/lib/dma/bcm2711/bcm2711_dmac.h \
+ C:/Users/jukken/rpi4_hyp_803/src/lib/dma/public/hw/dma.h
